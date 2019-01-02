@@ -15,7 +15,7 @@ import android.view.View;
 import android.widget.ImageButton;
 import android.widget.RelativeLayout;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import butterknife.OnClick;
 import co.adrianblan.fastbrush.dialog.BrushDialogFragment;
@@ -24,7 +24,7 @@ import co.adrianblan.fastbrush.utils.Utils;
 
 public class MainActivity extends AppCompatActivity {
 
-    @Bind(R.id.toolbar)
+//    @BindView(R.id.toolbar)
     Toolbar toolbar;
 
     private MyGLSurfaceView glSurfaceView;
@@ -43,6 +43,7 @@ public class MainActivity extends AppCompatActivity {
         RelativeLayout.LayoutParams lp = new RelativeLayout.LayoutParams(RelativeLayout.LayoutParams.MATCH_PARENT,
                 RelativeLayout.LayoutParams.MATCH_PARENT);
 
+        toolbar = (Toolbar)findViewById(R.id.toolbar);
         lp.addRule(RelativeLayout.LEFT_OF, toolbar.getId());
         glSurfaceView.setLayoutParams(lp);
 

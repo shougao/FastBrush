@@ -11,7 +11,7 @@ import android.widget.CheckedTextView;
 import android.widget.SeekBar;
 import android.widget.TextView;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import co.adrianblan.fastbrush.R;
 import co.adrianblan.fastbrush.settings.SettingsData;
@@ -22,31 +22,31 @@ import co.adrianblan.fastbrush.settings.SettingsManager;
  */
 public class BrushDialogFragment extends DialogFragment {
 
-    @Bind(R.id.seekBarBrushSize)
+    @BindView(R.id.seekBarBrushSize)
     SeekBar seekBarBrushSize;
 
-    @Bind(R.id.brushSizeSubtitle)
+    @BindView(R.id.brushSizeSubtitle)
     TextView brushSizeSubtitle;
 
-    @Bind(R.id.seekBarBrushSizePressureFactor)
+    @BindView(R.id.seekBarBrushSizePressureFactor)
     SeekBar seekBarBrushSizePressureFactor;
 
-    @Bind(R.id.brushSizePressureFactorSubtitle)
+    @BindView(R.id.brushSizePressureFactorSubtitle)
     TextView brushSizePressureFactorSubtitle;
 
-    @Bind(R.id.seekBarBristleAmount)
+    @BindView(R.id.seekBarBristleAmount)
     SeekBar seekBarBristleAmount;
 
-    @Bind(R.id.bristleAmountSubtitle)
+    @BindView(R.id.bristleAmountSubtitle)
     TextView bristleAmountSubtitle;
 
-    @Bind(R.id.seekBarBristleThickness)
+    @BindView(R.id.seekBarBristleThickness)
     SeekBar seekBarBristleThickness;
 
-    @Bind(R.id.bristleThicknessSubtitle)
+    @BindView(R.id.bristleThicknessSubtitle)
     TextView bristleThickessSubtitle;
 
-    @Bind(R.id.showBrushView)
+    @BindView(R.id.showBrushView)
     CheckedTextView showBrushView;
 
     private SettingsManager settingsManager;

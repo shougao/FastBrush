@@ -23,7 +23,7 @@ import android.widget.TextView;
 
 import com.pes.androidmaterialcolorpickerdialog.ColorPicker;
 
-import butterknife.Bind;
+import butterknife.BindView;
 import butterknife.ButterKnife;
 import co.adrianblan.fastbrush.MainActivity;
 import co.adrianblan.fastbrush.R;
@@ -35,16 +35,16 @@ import co.adrianblan.fastbrush.settings.SettingsManager;
  */
 public class InkDialogFragment extends DialogFragment {
 
-    @Bind(R.id.seekBarInkOpacity)
+    @BindView(R.id.seekBarInkOpacity)
     SeekBar seekBarInkOpacity;
 
-    @Bind(R.id.inkBarOpacitySubtitle)
+    @BindView(R.id.inkBarOpacitySubtitle)
     TextView inkOpacitySubtitle;
 
-    @Bind(R.id.buttonSelectColor)
+    @BindView(R.id.buttonSelectColor)
     AppCompatButton buttonSelectColor;
 
-    @Bind(R.id.colorCircle)
+    @BindView(R.id.colorCircle)
     ImageView colorCircle;
 
     private SettingsManager settingsManager;
